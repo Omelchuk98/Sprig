@@ -1,0 +1,659 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  background: #e5e5e5;
+  font-size: 17px;
+  color: #0b2330;
+  font-weight: 400;
+  font-family: Roboto;
+}
+/*-----------------------------------------------------------*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  max-width: 1440px;
+}
+/*----------Header----------------------------------------------*/
+.header {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 83px;
+  align-items: center;
+}
+.header__logo {
+  margin: 16px 0px 15px 32px;
+}
+.header__logophoto {
+  padding: 0 6px 0 4px;
+}
+.underlogo_text {
+  font-size: 12px;
+  color: #000;
+  line-height: 133%;
+}
+.header__menu {
+  margin: 0 0 0 141px;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__item {
+  margin: 0 24px;
+}
+.V {
+  background: url(img/V.png) 100% no-repeat;
+  padding-right: 10px;
+}
+.menu__link {
+  font-size: 16px;
+  line-height: 150%;
+  color: #0b2330;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+.sign-in__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 117px;
+}
+.sign-in__item {
+  margin: 0 24px;
+}
+.sign-in__link {
+  font-size: 16px;
+  line-height: 150%;
+  color: #0b2330;
+}
+.sign-in__link:hover {
+  text-decoration: underline;
+}
+.sign-in__button {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sign-in__blue-button {
+  border-radius: 4px;
+  display: flex;
+  width: 163px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 150%;
+  padding: 15px 29px;
+  transition: all 0.3s ease 0s;
+  background: #0b2330;
+  color: #fff;
+}
+.sign-in__blue-button:hover {
+  background-color: #f9c600;
+  color: #0b2330;
+}
+/*----------PAGE---------------------------*/
+.page {
+}
+.page__research {
+  display: flex;
+}
+.research__content {
+  max-width: 448px;
+  max-height: 886;
+  margin: 0 147px;
+}
+.research__title {
+  font-size: 60px;
+  line-height: 106.6666%;
+  margin: 154px 12px 0 0;
+}
+.research__text {
+  color: #375361;
+  font-size: 22px;
+  line-height: 145.45%;
+  margin: 32px 12px 0 0;
+}
+.research__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.research__button {
+  border-radius: 4px;
+  display: flex;
+  min-height: 54px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 150%;
+  padding: 15px 29px;
+  margin: 38px 0 256px 0;
+  transition: all 0.5s ease 0s;
+  color: #0b2330;
+}
+.yellow_button {
+  background: #f9c600;
+  margin-right: 16px;
+}
+.white_button {
+  border: 1px solid #0b2330;
+}
+.yellow_button:hover {
+  background: #0b2330;
+  color: #fff;
+}
+.white_button:hover {
+  background: #f9c600;
+  border: none;
+}
+
+.research__hooli {
+  background: #f9c600
+    url('/Project/IT/vscode/Maket/MAKET 5 Юрцове/sprig/img/white_strick.png')
+    bottom/100% auto no-repeat;
+  max-width: 600px;
+  margin-left: 80px;
+}
+.research_girl {
+  position: relative;
+  top: 172px;
+  right: 102px;
+  bottom: 173px;
+}
+/*--------------------LOGO------------------------*/
+.companies__title {
+  font-size: 42px;
+  line-height: 114%;
+  letter-spacing: 0.42px;
+  margin: 0 auto;
+  width: 547px;
+  text-align: center;
+  margin-top: 189px;
+  margin-bottom: 59px;
+}
+.companies__logo {
+  display: grid;
+  column-gap: 41px;
+  row-gap: 8px;
+  grid-template: repeat(2, 56px) / repeat(5, 152px);
+  justify-content: center;
+}
+.company__logo {
+  width: 152px;
+  max-height: 56px;
+}
+.company__logo img {
+}
+/*-----------------BICYCLE-----------------*/
+.bicycle {
+  display: flex;
+  margin: 192px 32px 0px 32px;
+  background: #51cebc;
+  border-radius: 10px;
+}
+.bicycle__logo {
+  padding: 56px 20px 56px 0px;
+}
+.bicycle__text {
+  margin: 115px 116px 131px 0;
+}
+.bicycle__title {
+  font-size: 34px;
+  letter-spacing: 0.34px;
+  line-height: 117.64%;
+  margin-bottom: 35px;
+  padding-right: 5px;
+}
+.bicycle__paragraph {
+  font-size: 22px;
+  line-height: 145.45%;
+  padding-right: 29px;
+}
+/*-----------------ANALYTICS-----------------*/
+.analytics {
+}
+.analytics__title {
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.34px;
+  font-size: 34px;
+  line-height: 117.65%;
+  margin-top: 191px;
+  margin-bottom: 57px;
+  width: 711px;
+}
+.analytics__image {
+  display: flex;
+  margin: 0 auto;
+}
+.analytics__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.analytics__button_yellow_button {
+  background: #f9c600;
+  border-radius: 4px;
+  min-height: 54px;
+  line-height: 150%;
+  padding: 15px 29px;
+  margin: 113px 0 0 0;
+  transition: all 0.5s ease 0s;
+  color: #0b2330;
+}
+.analytics__button_yellow_button:hover {
+  background: #0b2330;
+  color: #fff;
+}
+/*-----------------FEATURES-----------------*/
+.features {
+  display: flex;
+  margin: 160px 32px 0px 148px;
+  background: #bd78f0;
+  border-radius: 10px;
+  min-height: 537px;
+}
+.features__text {
+  width: 550px;
+  margin: 106px 116px 123px 136px;
+}
+.features__title {
+  font-size: 42px;
+  letter-spacing: 0.42px;
+  line-height: 114.28%;
+  padding-right: 77px;
+}
+.features__paragraph {
+  padding-top: 39px;
+  line-height: 164.7%;
+}
+.features__image {
+  position: relative;
+  top: 64px;
+  left: -116px;
+}
+/*-----------------Solutions-----------------*/
+.solutions {
+  margin: 136px 32px 0 148px;
+}
+.solutions__solutions {
+}
+.solutions__upper {
+  color: #6a7981;
+  font-size: 14px;
+  line-height: 171.42%;
+  letter-spacing: 1.4px;
+}
+.solutions__header {
+  font-size: 42px;
+  line-height: 114.28%;
+  letter-spacing: 0.42px;
+  width: 593px;
+  margin-top: 13px;
+}
+.solutions__text {
+  font-size: 22px;
+  line-height: 145.45%;
+  color: #375361;
+  margin-top: 26px;
+}
+.solutions__content {
+  margin-top: 226px;
+}
+.solutions__box {
+  display: flex;
+}
+.solutions__box:not(:last-child) {
+  margin-bottom: 41px;
+}
+
+.solutions_first-box {
+  margin-right: 234px;
+  max-width: 513px;
+}
+.solutions__icon {
+}
+.solutions__head {
+  font-size: 34px;
+  line-height: 117.64%;
+  letter-spacing: 0.34px;
+  margin-top: 23px;
+}
+.solutions__about {
+  color: #375361;
+  line-height: 164.7%;
+  margin-top: 29px;
+  padding-right: 29px;
+}
+.solutions__button {
+  display: flex;
+  flex-wrap: wrap;
+}
+.solutions__white-button {
+  border: 1px solid #0b2330;
+  border-radius: 4px;
+  display: flex;
+  height: 54px;
+  width: 144px;
+  line-height: 150%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
+  color: #000;
+  margin-top: 64px;
+}
+.solutions__white-button:hover {
+  background: #f9c600;
+  color: #0b2330;
+  border: none;
+}
+.solutions_bottom {
+}
+.solutions__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.solutions_whitebutton {
+  font-size: 12px;
+  line-height: 133.33%;
+  color: #61757e;
+  letter-spacing: 1.2px;
+  padding: 0 8px;
+}
+.solutions_whitebutton:hover {
+  text-decoration: underline;
+}
+/*----------------DELIVERS--------------*/
+.delivers {
+  margin: 136px 32px 0 148px;
+}
+
+.delivers__upper {
+  color: #6a7981;
+  font-size: 14px;
+  line-height: 171.42%;
+  letter-spacing: 1.4px;
+}
+
+.delivers__content {
+  margin-top: 226px;
+}
+.delivers__box {
+  display: flex;
+}
+.delivers__box:not(:last-child) {
+}
+
+.delivers_first-box {
+  margin-right: 183px;
+  max-width: 669px;
+}
+.delivers__head {
+  font-size: 34px;
+  line-height: 117.64%;
+  letter-spacing: 0.34px;
+  margin-top: 15px;
+}
+.delivers__about {
+  color: #375361;
+  line-height: 164.7%;
+  margin-top: 37px;
+}
+.delivers__button {
+  display: flex;
+  flex-wrap: wrap;
+}
+.delivers__white-button {
+  background: #f9c600;
+  border-radius: 4px;
+  display: flex;
+  height: 54px;
+  width: 208px;
+  line-height: 150%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
+  color: #0b2330;
+  margin-top: 36px;
+}
+.delivers__white-button:hover {
+  background: #0b2330;
+  color: white;
+  border: none;
+}
+.delivers__photo {
+  margin-right: -32px;
+}
+/*-------------------STUDY---------------*/
+.study {
+  margin: 240px 32px 32px 46px;
+  width: 1376px;
+  height: 584px;
+}
+
+.study__upper {
+  color: #6a7981;
+  font-size: 14px;
+  line-height: 171.42%;
+  letter-spacing: 1.4px;
+}
+
+.study__content {
+}
+.study__box {
+  display: flex;
+}
+.study_first-box {
+  padding: 116.5px 80px;
+  margin-right: 20px;
+  max-width: 562px;
+}
+.study__head {
+  font-size: 24px;
+  line-height: 133.33%;
+  margin-top: 17px;
+}
+.study__about {
+  color: #375361;
+  line-height: 164.7%;
+  margin-top: 27px;
+}
+.study__button {
+  display: flex;
+  flex-wrap: wrap;
+}
+.study__white-button {
+  border: 1px solid #0b2330;
+  border-radius: 4px;
+  display: flex;
+  height: 54px;
+  width: 140px;
+  line-height: 150%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
+  color: #0b2330;
+  margin-top: 36px;
+}
+.study__white-button:hover {
+  background: #f9c600;
+  border: none;
+}
+.study_second-box {
+  background: #f9c600
+    url('/Project/IT/vscode/Maket/MAKET 5 Юрцове/sprig/img/study_back.png')
+    no-repeat;
+  border-radius: 0px 10px 10px 0px;
+  height: 584px;
+  width: 794px;
+}
+.study_second-box_container {
+  padding: 80px 116px 104px 80px;
+}
+.study_second-box_header {
+  color: #000;
+  font-size: 34px;
+  letter-spacing: 0.34px;
+  line-height: 117.64%;
+  max-width: 557px;
+}
+.study_second-box_person {
+  display: flex;
+}
+.study_second-box_person-photo {
+  margin-top: 81px;
+  margin-right: 24px;
+}
+.study_second-box_person-about {
+  margin-top: 95px;
+}
+.study_second-box_person-name {
+  font-size: 16px;
+  line-height: 150%;
+}
+.study_second-box_person-profession {
+  line-height: 167.7%;
+  color: #2f3f48;
+}
+/*-------------------FOOTER----------------*/
+.footer {
+  background: #0b2330;
+}
+.footer__top {
+  background: url('/Project/IT/vscode/Maket/MAKET 5 Юрцове/sprig/img/line.png')
+    bottom no-repeat;
+}
+.footer__top-container {
+  margin: 56px 381px 1px 381px;
+}
+.footer__top-container_header1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 114.28%;
+  letter-spacing: 0.42px;
+  text-align: center;
+}
+.footer__top-container_about {
+  color: #fff;
+  line-height: 164.7%;
+  text-align: center;
+  margin-top: 31px;
+}
+.footer__top-container_button {
+  border-radius: 4px;
+  display: flex;
+  min-height: 54px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 150%;
+  transition: all 0.5s ease 0s;
+  color: #0b2330;
+}
+.yellow-foot {
+  background: #f9c600;
+  padding: 0 16px;
+  margin: 36px 0 97px 0;
+}
+.yellow-foot:hover {
+  background: #fff;
+}
+
+.footer__main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.footer__logo {
+  margin-left: 32px;
+  margin-right: 110px;
+}
+.footer__row {
+  display: flex;
+}
+.footer__column {
+  flex: 0 1 25%;
+  width: 196px;
+  height: 290px;
+}
+.footer__column:not(:last-child) {
+  margin-right: 40px;
+}
+.footer__label {
+  color: #f9c600;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 14px;
+}
+.footer__menu {
+}
+.menu-footer {
+}
+.menu-footer__list {
+}
+.menu-footer__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+.menu-footer__link {
+  color: #94a0a4;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 150%;
+}
+.footer__bottom {
+  display: flex;
+}
+.footer__bottom-text {
+  color: #94a0a4;
+  margin: 69px 589px 220px 268px;
+}
+.footer__bottom-follow {
+  margin-top: 65px;
+}
+.follow__icon:not(:last-child) {
+  margin-right: 24px;
+}

@@ -1,0 +1,22 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\..\\..\\CSS\\New folder"
+	},
+	{
+		"path": "..\\..\\..\\Maket 1"
+	},
+	{
+		"path": "..\\..\\..\\Maket 2"
+	},
+	{
+		"path": "..\\..\\..\\MAKET 3"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "MAKET 3"
+  }
+}
